@@ -1,0 +1,40 @@
+<!DOCTYPE html>       <!--doctype declaration-->
+<html>                   <!--html start tag-->
+
+<head>
+<title>
+Assignment 5.2
+</title>
+</head>
+
+<body>                    <!--body start tag-->
+
+ <p style="font-size:20px" > Enter the value in box! </p>                     
+<form>
+<input type="text" id="character" name="charac">
+<button onclick="check()">Click me!</button>
+</form>
+
+<script>                                               <!--script start tag-->
+function check()
+{
+  var sample=document.getElementById("character").value;
+   
+  var str=sample;
+  
+ if((str=="a" || str=="e" || str=="i"|| str=="o" || str=="u" || str=="A" || str=="E" || str=="I"|| str=="O" || str=="U"  ))               <!--logic for checking vowel or consonant-->
+{
+  
+  
+  alert("The given string is vowel :- " + str );
+
+}
+else
+{
+   alert("The given string is consonant :- " +str);
+}
+}
+</script>                                                    <!--script tag end-->
+
+</body>                                                          <!--body tag end-->
+</html>                                                          <!--html tag end-->
